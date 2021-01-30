@@ -33,10 +33,7 @@ const Login = (props) => {
 
   const handleSubmit = (values) => {
     const { dispatch } = props;
-    dispatch({
-      type: 'login/login',
-      payload: { ...values, type },
-    });
+    dispatch({ type: 'login/login', payload: { ...values, type } });
   };
 
   return (
