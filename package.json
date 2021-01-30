@@ -33,7 +33,7 @@
     "tsc": "tsc --noEmit"
   },
   "lint-staged": {
-    "**/*.less": "stylelint --syntax less",
+    "**/*.less": "stylelint --syntax less --fix",
     "**/*.{js,jsx,ts,tsx}": "npm run lint-staged:js",
     "**/*.{js,jsx,tsx,ts,less,md,json}": ["prettier --write"]
   },
